@@ -1,0 +1,8 @@
+.bo_v_nb li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gall_row .gall_li.col-gn-1 {
+  width: 100%
+}

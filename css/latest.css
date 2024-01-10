@@ -1,0 +1,133 @@
+.notice-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.notice-container .notice-item {
+  flex: 1
+}
+
+.notice-container .notice-item+.notice-item {
+  margin-left: 100px
+}
+
+.notice-item .lat_title {
+  margin-bottom: 10px;
+  font-size: 24px;
+
+}
+
+.notice-item .basic_li {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  /* border-bottom: 1px dashed #ddd; */
+}
+
+.notice-item .basic_li+li {
+  border-top: 1px dashed #ddd
+}
+
+.notice-item .basic_li>a:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin-right: 8px;
+  background: #222;
+  vertical-align: middle;
+}
+
+.notice-item .basic_li>a {
+  /* padding-left: 10px; */
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+}
+
+.notice-item .basic_li .new_icon {
+  /* display:none */
+}
+
+.notice-item .basic_li .new_icon {
+  display: none;
+}
+
+.notice-item .basic_li .lt_info {
+  display: flex;
+  align-items: center;
+}
+
+.notice-item .basic_li .lt_info .lt_nick {
+  display: none
+}
+
+.notice-item .basic_li .lt_info .lt_date {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.sound_only {
+  display: none
+}
+
+.notice-item .lt_more {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  color: #ddd;
+}
+
+
+/* gallery */
+.notice-item .pic_lt ul {
+  display: flex;
+}
+
+.notice-item .pic_lt .gallery_li {
+  flex: 1
+}
+
+.notice-item .pic_lt .gallery_li+li {
+  margin-left: 10px
+}
+
+.notice-item .pic_lt .gallery_li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.notice-item .pic_lt .gallery_li .new_icon {
+  display: none
+}
+
+.notice-item .pic_lt .gallery_li .lt_nick {
+  display: none
+}
+
+@media screen and (max-width:480px) {
+  .notice-container {
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notice-container .notice-item {
+    width: 100%;
+    margin-top: 30px;
+    position: Relative
+  }
+
+  .notice-container .notice-item+.notice-item {
+    margin-left: auto
+  }
+
+
+}

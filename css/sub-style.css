@@ -1,0 +1,80 @@
+.sub-visual {
+  height: 350px;
+  background: url(../img/sub_visual16.jpg) no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 86px;
+}
+
+.sub-visual .titlecon {
+  text-align: center
+}
+
+.sub-visual .titlecon h2.title {
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs li a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  font-weight: 100
+}
+
+.breadcrumbs li:last-child a {
+  font-weight: 800
+}
+
+.breadcrumbs li+li a:before {
+  content: '>';
+  display: inline-block;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.breadcrumbs li+li {
+  /* margin: 0 10px */
+}
+
+.breadcrumbs li a ion-icon {
+  vertical-align: text-bottom;
+}
+
+.sub-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0
+}
+
+@media screen and (max-width:480px) {
+  .sub-visual {
+    margin-top: 60px;
+    height: 200px;
+  }
+
+  .sub-container {
+    width: 100%;
+    padding: 50px 10px;
+    /* padding: 70px 10px */
+  }
+
+  .sub-visual .titlecon h2.title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .breadcrumbs {
+    margin-top: 15px
+  }
+}

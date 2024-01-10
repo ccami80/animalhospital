@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>청담우리동물병원</title>
+    <link rel="shortcut icon" href="./img/cd.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/webfont.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tab001.css" />
+    <link rel="stylesheet" href="./css/tab002.css" />
+    <link rel="stylesheet" href="./css/accordion.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay" data-overlay></div>
+
+    <!-- ----------------------------------------------- -->
+    <div class="sitemap-area is-active">
+      <div class="sitemap_imgcon">
+        <img src="./img/sitemap_logo.png" alt="" />
+      </div>
+      <ul class="sitemap-list">
+        <li>
+          <a href="#">청담우리는</a>
+          <ul class="sitemap-sub-menu-title">
+            <li><a href="#">대표원장 인사말</a></li>
+            <li><a href="#">원스탑 토탈클리닉</a></li>
+            <li><a href="#">청담우리와 함께한 star</a></li>
+            <li><a href="#">의료진소개</a></li>
+            <li><a href="#">병원미리보기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">병원이용안내</a>
+          <ul class="sitemap-sub-menu-title">
+            <li><a href="#">예약 및진료시간안내</a></li>
+            <li><a href="#">24시 응급진료안내</a></li>
+            <li><a href="#">찾아오시는길</a></li>
+            <li><a href="#">주차안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">센터별특화진료</a>
+          <ul class="sitemap-sub-menu-title">
+            <li><a href="#">슬개골탈구/재활센터</a></li>
+            <li><a href="#">심장센터</a></li>
+            <li><a href="#">내시경센터</a></li>
+            <li><a href="#">정형외과센터</a></li>
+            <li><a href="#">치과센터</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">전문진료소개</a>
+          <ul class="sitemap-sub-menu-title">
+            <li><a href="#">내과</a></li>
+            <li><a href="#">안과</a></li>
+            <li><a href="#">임상병리</a></li>
+            <li><a href="#">영상진단</a></li>
+            <li><a href="#">특수동물</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">with 청담우리</a>
+          <ul class="sitemap-sub-menu-title">
+            <li><a href="#">호텔/놀이방안내</a></li>
+            <li><a href="#">미용실 안내</a></li>
+            <li><a href="#">청담우리몰 바로가기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">커뮤니티</a>
+          <ul class="sitemap-sub-menu-title">
+            <li>
+              <a
+                href="http://ivy80.dothome.co.kr/gb5/bbs/board.php?bo_table=go_bbs1"
+                >공지사항</a
+              >
+            </li>
+            <li><a href="#">청담우리미디어</a></li>
+            <li><a href="#">펫도서관</a></li>
+            <li><a href="#">진료후기&지식백과</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="closebt"><i class="bx bx-x"></i></button>
+    </div>
+    <!-- ----------------------------------------------- -->
+    <nav class="mobile-navigation-menu" data-mobile-menu>
+      <!-- <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu> -->
+      <div class="menu-top">
+        <h2 class="menu-title">로그인</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">청담우리는</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >대표원장 인사말</a
+              >
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >원스탑 토탈 클리닉</a
+              >
+            </li>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >청담우리와 함께한 star</a
+              >
+            </li>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >의료진 소개</a
+              >
+            </li>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >병원 미리보기</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">병원 이용안내</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="https://www.naver.com" class="submenu-title"
+                >예약 및 진료시간 안내</a
+              >
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >24시 응급진료 안내</a
+              >
+            </li>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >찾아오시는 길</a
+              >
+            </li>
+            <li class="submenu-category">
+              <a href="https://www.naver.com/" class="submenu-title"
+                >주차안내</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">센터별 특화진료</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">슬개골/재활 센터</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">심장 센터</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">내시경 센터</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">정형외과 센터</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">치과 센터</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">전문진료 소개</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">내과 클리닉</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">안과 클리닉</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">피부과 클리닉</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">임상병리과</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">영상진단과</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">특수동물</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">with 청담우리</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">호텔/놀이방</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">미용실</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">청담우리몰 바로가기</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              <span class="txt">커뮤니티</span>
+            </p>
+
+            <div>
+              <ion-icon name="chevron-down-outline" class="add-icon"></ion-icon>
+              <ion-icon
+                name="chevron-up-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">공지사항</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">청담우리 미디어</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">팩도서관</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">진료후기&지식백과</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- ----------------------------------------------- -->
+    <header class="mainheader">
+      <div class="mainheaderwrap">
+        <div class="mobile-tel">
+          <a href="tel:02-541-7515"><i class="bx bxs-phone-call"></i></a>
+        </div>
+        <h1 class="logo">
+          <a href="#">
+            <img src="img/logo.png" class="pc-img" alt="" />
+            <img src="img/logo_m.png" class="mobile-img" alt="" />
+          </a>
+        </h1>
+        <nav class="pc-gnb">
+          <ul class="pc-gnb-list">
+            <li>
+              <a href="#">청담우리는</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">대표원장 인사말</a></li>
+                <li><a href="#">원스탑 토탈클리닉</a></li>
+                <li><a href="#">청담우리와 함께한 star</a></li>
+                <li><a href="#">의료진소개</a></li>
+                <li><a href="#">병원미리보기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">병원이용안내</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">예약 및진료시간안내</a></li>
+                <li><a href="#">24시 응급진료안내</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li><a href="#">주차안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">센터별특화진료</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">슬개골탈구/재활센터</a></li>
+                <li><a href="#">심장센터</a></li>
+                <li><a href="#">내시경센터</a></li>
+                <li><a href="#">정형외과센터</a></li>
+                <li><a href="#">치과센터</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">전문진료소개</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">내과</a></li>
+                <li><a href="#">안과</a></li>
+                <li><a href="#">임상병리</a></li>
+                <li><a href="#">영상진단</a></li>
+                <li><a href="#">특수동물</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">With 청담우리</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">호텔/놀이방안내</a></li>
+                <li><a href="#">미용실 안내</a></li>
+                <li><a href="#">청담우리몰 바로가기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">청담우리미디어</a></li>
+                <li><a href="#">펫도서관</a></li>
+                <li><a href="#">진료후기&지식백과</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="pc-btn-container">
+          <div class="login">
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="sitemap-bt"><i class="bx bx-menu-alt-right"></i></div>
+        </div>
+        <div class="mobilemenu" data-mobile-menu-open-btn>
+          <a href="#"><i class="bx bx-menu"></i></a>
+        </div>
+
+        <nav class="mobile-gnb">
+          <ul>
+            <li>
+              <a href="#">청담우리는</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">대표원장 인사말</a></li>
+                <li><a href="#">원스탑 토탈클리닉</a></li>
+                <li><a href="#">청담우리와 함께한 star</a></li>
+                <li><a href="#">의료진소개</a></li>
+                <li><a href="#">병원미리보기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">병원이용안내</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">예약 및진료시간안내</a></li>
+                <li><a href="#">24시 응급진료안내</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li><a href="#">주차안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">센터별특화진료</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">슬개골탈구/재활센터</a></li>
+                <li><a href="#">심장센터</a></li>
+                <li><a href="#">내시경센터</a></li>
+                <li><a href="#">정형외과센터</a></li>
+                <li><a href="#">치과센터</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">전문진료소개</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">내과</a></li>
+                <li><a href="#">안과</a></li>
+                <li><a href="#">임상병리</a></li>
+                <li><a href="#">영상진단</a></li>
+                <li><a href="#">특수동물</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">with 청담우리</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">호텔/놀이방안내</a></li>
+                <li><a href="#">미용실 안내</a></li>
+                <li><a href="#">청담우리몰 바로가기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="sub-menu-title">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">청담우리미디어</a></li>
+                <li><a href="#">펫도서관</a></li>
+                <li><a href="#">진료후기&지식백과</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- visual -->
+
+    <div class="visual">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="txtcon">
+              <span class="txt">청담우리동물병원은</span>
+              <h3 class="title">반려동물 가족의 <br /><em>행복</em>을 위해</h3>
+              <p class="desc">
+                조그만 소리에도 귀 기울이며, 항상 좋은 친구처럼, 늘 편안한
+                이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해 최고를
+                지향하며 노력하겠습니다.
+              </p>
+              <a href="#" class="gobt"
+                >펫도서관 바로가기<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txtcon">
+              <span class="txt">청담우리의 특별함</span>
+              <h3 class="title enfontfamily">ONE STOP TOTAL <br />CLINIC</h3>
+              <p class="desc">
+                보호자분들이 청담우리를 방문하셨을때 원하시는 일을 쉽게 처리하고
+                편하게 쉬고 가실 수 있도록 One stop total clinic을 제공하고
+                있습니다.
+              </p>
+              <a href="#" class="gobt"
+                >자세히보기<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txtcon">
+              <span class="txt">끊임없이 연구하고 노력하는</span>
+              <h3 class="title">
+                <em>20인</em>의 수의사와 <br /><em>70여명</em>의 의료진
+              </h3>
+              <p class="desc">
+                보호자분들이 청담우리를 방문하셨을때 원하시는 일을 쉽게 처리하고
+                편하게 쉬고 가실 수 있도록 One stop total clinic을 제공하고
+                있습니다.
+              </p>
+              <a href="#" class="gobt"
+                >대표원장 인사말<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- visual -->
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner-wrap">
+        <div class="banner-item">
+          <div>
+            <span class="txt"> 청담우리와 함께한</span>
+            <h2 class="title enfontfamily">celebrity</h2>
+            <p class="desc">
+              본원과 함께한 많은 스타분들, <br />
+              그리고 스타의 반려동물을 소개합니다.
+            </p>
+          </div>
+          <a href="#" class="view-bt">자세히보기</a>
+        </div>
+        <div class="banner-item">
+          <div>
+            <span class="txt"> 반려동물의 건강을 책임지는</span>
+            <h2 class="title">의료진소개</h2>
+            <p class="desc">
+              분과별 박사·석사를 포함한 <br />
+              70명의 의료진을 소개합니다.
+            </p>
+          </div>
+          <a href="#" class="view-bt">자세히보기</a>
+        </div>
+        <div class="banner-item">
+          <div>
+            <span class="txt"> 청담우리와 함께한</span>
+            <h2 class="title enfontfamily">celebrity</h2>
+            <p class="desc">
+              본원과 함께한 많은 스타분들, <br />
+              그리고 스타의 반려동물을 소개합니다.
+            </p>
+          </div>
+          <a href="#" class="view-bt">자세히보기</a>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+
+    <div class="youtube">
+      <div class="tabs">
+        <div class="tabsBody">
+          <div class="tabsContent is-active">
+            <div class="videocon">
+              <!-- <img src="img/you1.jpg" alt="" /> -->
+              <iframe
+                width="599"
+                height="380"
+                src="https://www.youtube.com/embed/ekTxJgCknzo"
+                title="강아지 십자인대파열 수술이 필요한 이유"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle">강아지 십자인대파열 수술이 필요한 이유</h2>
+              <p class="tabsText">반려동물에 대한 건강정보를 알려드립니다.</p>
+              <a
+                class="youtube_bt"
+                href="https://www.youtube.com/channel/UCrcOQ17ToaezHar5lp4iH6w"
+              >
+                <i class="bx bxl-youtube"></i> 유투브채널 확인하기
+              </a>
+            </div>
+          </div>
+          <div class="tabsContent">
+            <div class="videocon">
+              <iframe
+                width="599"
+                height="380"
+                src="https://www.youtube.com/embed/cqZU2L-Gzs4"
+                title="강아지 눈물이 많이 나거나 눈물자국이 심하면 이렇게 해볼 수 있어요 :)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle">
+                강아지 눈물이 많이 나거나 눈물자국이 심하면 이렇게 해볼 수
+                있어요
+              </h2>
+              <p class="tabsText">반려동물에 대한 건강정보를 알려드립니다.</p>
+              <a
+                class="youtube_bt"
+                href="https://www.youtube.com/channel/UCrcOQ17ToaezHar5lp4iH6w"
+              >
+                <i class="bx bxl-youtube"></i> 유투브채널 확인하기
+              </a>
+            </div>
+          </div>
+          <div class="tabsContent">
+            <div class="videocon">
+              <iframe
+                width="599"
+                height="380"
+                src="https://www.youtube.com/embed/uarQnFvAHUU"
+                title="강아지 초음파 검사가 꼭 필요한 이유! 무시무시한 종양을 조기발견하는 방법!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle">
+                강아지 초음파 검사가 꼭 필요한 이유! 무시무시한 종양을
+                조기발견하는 방법!
+              </h2>
+              <p class="tabsText">반려동물에 대한 건강정보를 알려드립니다.</p>
+              <a
+                class="youtube_bt"
+                href="https://www.youtube.com/channel/UCrcOQ17ToaezHar5lp4iH6w"
+              >
+                <i class="bx bxl-youtube"></i> 유투브채널 확인하기
+              </a>
+            </div>
+          </div>
+          <div class="tabsContent">
+            <div class="videocon">
+              <iframe
+                width="599"
+                height="380"
+                src="https://www.youtube.com/embed/0PnT5lrSVDo"
+                title="이런 증상이 강아지 치매 증상이라구?!? 강아지 인지기능장애 CDS"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle">
+                이런 증상이 강아지 치매 증상이라구?!? 강아지 인지기능장애 CDS
+              </h2>
+              <p class="tabsText">반려동물에 대한 건강정보를 알려드립니다.</p>
+              <a
+                class="youtube_bt"
+                href="https://www.youtube.com/channel/UCrcOQ17ToaezHar5lp4iH6w"
+              >
+                <i class="bx bxl-youtube"></i> 유투브채널 확인하기
+              </a>
+            </div>
+          </div>
+          <div class="tabsContent">
+            <div class="videocon">
+              <iframe
+                width="599"
+                height="380"
+                src="https://www.youtube.com/embed/3IpzPxFuWTw"
+                title="강아지 귀청소 어렵지않아요! 집에서 귀청소 쉽게하는 꿀팁 :)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle">
+                강아지 귀청소 어렵지않아요! 집에서 귀청소 쉽게하는 꿀팁
+              </h2>
+              <p class="tabsText">반려동물에 대한 건강정보를 알려드립니다.</p>
+              <a
+                class="youtube_bt"
+                href="https://www.youtube.com/channel/UCrcOQ17ToaezHar5lp4iH6w"
+              >
+                <i class="bx bxl-youtube"></i> 유투브채널 확인하기
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tabsHead">
+          <span class="tabsToggle is-active">
+            <img src="img/you5.jpg" alt="" />
+          </span>
+          <span class="tabsToggle"><img src="img/you4.jpg" alt="" /></span>
+          <span class="tabsToggle"><img src="img/you3.jpg" alt="" /></span>
+          <span class="tabsToggle"><img src="img/you2.jpg" alt="" /></span>
+          <span class="tabsToggle"><img src="img/you1.jpg" alt="" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- abouthospital -->
+    <div class="abouthospital">
+      <div class="titlecontent">
+        <p class="desc">청담우리의 특화진료를 소개합니다</p>
+        <h2 class="title">센터별 특화진료 바로가기</h2>
+      </div>
+      <div class="tabs-about">
+        <div class="tabsBody-about">
+          <div class="tabsContent-about is-active">
+            <div class="imgcon">
+              <img src="img/main_member_1.jpg" alt="" />
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle-about" data-num="01">
+                청담우리의 특화진료<br />슬래골/재활 센터란?
+              </h2>
+              <p class="tabsText-about">
+                <em>인터뷰</em>
+                윤병국 대표원장
+              </p>
+              <a href="#" class="goto-bt"
+                >바로가기<i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="tabsContent-about">
+            <div class="imgcon">
+              <img src="img/main_member_2.jpg" alt="" />
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle-about" data-num="02">
+                청담우리의 특화진료<br />심장센터란?
+              </h2>
+              <p class="tabsText-about">
+                <em>인터뷰</em>
+                김승곤 진료부원장
+              </p>
+              <a href="#" class="goto-bt"
+                >바로가기<i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="tabsContent-about">
+            <div class="imgcon">
+              <img src="img/main_member_3.jpg" alt="" />
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle-about" data-num="03">
+                청담우리의 특화진료<br />내시경 센터란?
+              </h2>
+              <p class="tabsText-about">
+                <em>인터뷰</em>
+                허원석 총괄부원장
+              </p>
+              <a href="#" class="goto-bt"
+                >바로가기<i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="tabsContent-about">
+            <div class="imgcon">
+              <img src="img/main_member_4.jpg" alt="" />
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle-about" data-num="04">
+                청담우리의 특화진료<br />정형외과 센터란?
+              </h2>
+              <p class="tabsText-about">
+                <em>인터뷰</em>
+                서정철 총괄부원장
+              </p>
+              <a href="#" class="goto-bt"
+                >바로가기<i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="tabsContent-about">
+            <div class="imgcon">
+              <img src="img/main_member_5.jpg" alt="" />
+            </div>
+            <div class="txtcontent">
+              <h2 class="tabsTitle-about" data-num="05">
+                청담우리의 특화진료<br />치과 센터란?
+              </h2>
+              <p class="tabsText-about">
+                <em>인터뷰</em>
+                김한석 진료부원장
+              </p>
+              <a href="#" class="goto-bt"
+                >바로가기<i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabsHead-about">
+          <span class="tabsToggle-about is-active">
+            <span class="imgtxt">슬개골/재활</span>
+            <!-- <img src="img/main_member_1_sum.jpg" alt="" /> -->
+          </span>
+          <span class="tabsToggle-about">
+            <span class="imgtxt">심장센터</span>
+            <!-- <img src="img/main_member_2_sum.jpg" alt="" /> -->
+          </span>
+          <span class="tabsToggle-about">
+            <span class="imgtxt">내시경센터</span>
+            <!-- <img src="img/main_member_3_sum.jpg" alt="" /> -->
+          </span>
+          <span class="tabsToggle-about">
+            <span class="imgtxt">정형외과센터</span>
+            <!-- <img src="img/main_member_4_sum.jpg" alt="" /> -->
+          </span>
+          <span class="tabsToggle-about">
+            <span class="imgtxt">치과센터</span>
+            <!-- <img src="img/main_member_5_sum.jpg" alt="" /> -->
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- abouthospital -->
+    <!-- medical-department -->
+    <div class="medical-department">
+      <div class="titlecontent">
+        <p class="desc">청담우리의 진문진료를 소개합니다.</p>
+        <h2 class="title">진료과목안내</h2>
+      </div>
+      <ul class="medical-department-item">
+        <li>
+          <div class="imgcon"><img src="img/001.png" alt="" /></div>
+
+          <div>
+            <h3 class="title">내과클리닉</h3>
+            <p class="desc">호흡기계ㆍ순환기계등</p>
+          </div>
+          <a href="#" class="goto_bt"
+            >바로가기 <i class="bx bx-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <div class="imgcon"><img src="img/002.png" alt="" /></div>
+          <div>
+            <h3 class="title">안과클리닉</h3>
+            <p class="desc">건성 각결막염ㆍ눈물착색등</p>
+          </div>
+          <a href="#" class="goto_bt"
+            >바로가기 <i class="bx bx-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <div class="imgcon"><img src="img/003.png" alt="" /></div>
+          <div>
+            <h3 class="title">피부과클리닉</h3>
+            <p class="desc">귀질환ㆍ피부질환등</p>
+          </div>
+          <a href="#" class="goto_bt"
+            >바로가기 <i class="bx bx-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <div class="imgcon"><img src="img/004.png" alt="" /></div>
+          <div>
+            <h3 class="title">임상병리과</h3>
+            <p class="desc">혈액검사ㆍ유전자검사 등</p>
+          </div>
+          <a href="#" class="goto_bt"
+            >바로가기 <i class="bx bx-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <div class="imgcon"><img src="img/007.png" alt="" /></div>
+          <div>
+            <h3 class="title">특수동물클리닉</h3>
+            <p class="desc">토끼ㆍ이구아나ㆍ고슴도치 등</p>
+          </div>
+          <a href="#" class="goto_bt"
+            >바로가기 <i class="bx bx-chevron-right"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- medical-department -->
+
+    <!-- view-bg -->
+    <div class="view-bg">
+      <div class="text-content">
+        <span class="deco-txt"> chungdam woori animal hospital </span>
+        <h3 class="title">특별함이 가득한 곳 여기는 청담우리 입니다.</h3>
+        <p class="desc">
+          고품격 진료와 고객감동 서비스로 모든 반려동물과 보호자의 행목을
+          함께하는 청담 우리동물병원<br />
+          앞으로도 대한민국 반려동물 의료문화의 선두에 서서 최선을 다해
+          헌신하겠습니다.
+        </p>
+      </div>
+    </div>
+    <!-- view-bg -->
+
+    <!-- notice -->
+    <div class="notice">
+      <div class="notice-container">
+        <div>
+          <? echo latest("basic","go_bbs1",5,25);?>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="logoimg">
+          <img src="img/logo-white.png" alt="" />
+        </div>
+        <div class="company-info-area">
+          <ul class="company-info">
+            <li class="company-item">청담우리동물병원</li>
+            <li class="company-item">서울특별시 강남구 삼성로 614</li>
+            <li class="company-item">Tel. 02-541-7515</li>
+
+            <li class="company-item">Fax. 02-541-7518</li>
+            <li class="company-email">e-mail. 5417515wr@chungdamah.co.kr</li>
+            <li class="copyright">
+              &copy; Copyright 2021 CHUNGDAMWOORIAH. All Rights Reserved.
+            </li>
+          </ul>
+          <ul class="company-info2">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 취급방침</a></li>
+            <li><a href="#">청담우리소개</a></li>
+          </ul>
+        </div>
+        <ul class="sns">
+          <li>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- scrollup -->
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <!-- scrollup -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Initialize Swiper -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
